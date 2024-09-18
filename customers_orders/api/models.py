@@ -1,11 +1,12 @@
 from django.db import models
 
 class Customer(models.Model):
-    name = models.CharField(max_length=255) 
+    name = models.TextField() 
     code = models.CharField(max_length=100, unique=True,db_index=True)
 
     class Meta:
         index_together = [['name', 'code']]
+
 
 class Order(models.Model):
     item = models.CharField(max_length=255)
