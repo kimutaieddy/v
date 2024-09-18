@@ -4,7 +4,7 @@ class Customer(models.Model):
     name = models.TextField() 
     code = models.CharField(max_length=100, unique=True,db_index=True)
     created_at = models.DateTimeField(auto_now_add=True)
-
+    updated_at = models.DateTimeField(auto_now=True) 
     class Meta:
         index_together = [['name', 'code']]
 
