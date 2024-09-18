@@ -20,5 +20,5 @@ from rest_framework.routers import DefaultRouter
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('',include('router.urls')),
 ]
