@@ -10,4 +10,5 @@ router.register(r'orders', OrderViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),  
+    path('health/', include('health_check.urls')),  # Add health check endpoint
 ]
