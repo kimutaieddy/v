@@ -4,7 +4,7 @@ from rest_framework.routers import DefaultRouter
 from . import views
 
 
-#cudtomize routers
+# Cstom router & reg ur viewsets ..
 
 router=DefaultRouter()       
 router.register('customers', views.CustomerViewSet)
