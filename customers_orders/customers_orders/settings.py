@@ -30,6 +30,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# Assuming the internal organization-specific modules are used, the INSTALLED_APPS list should remain the same as in the retrieved context.
+# Make sure to add the relevant imports for internal organization modules, packages, and libraries.
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
