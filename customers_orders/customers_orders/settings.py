@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
-    'health_check',  # Add this line
-    'health_check.db',  # If you want database health check
-    'health_check.cache',  # If you want cache health check
-    'health_check.storage',  # If you want to check storage health
+    'health_check',  
+    'health_check.db',  
+    'health_check.cache',  
+    'health_check.storage',  
 ]
 
 MIDDLEWARE = [
