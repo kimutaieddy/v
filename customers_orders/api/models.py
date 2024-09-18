@@ -3,6 +3,18 @@ import uuid
 
 class Customer(models.Model):
     name = models.CharField(max_length=255)
+    code = models.UUIDField(default=uuid.uuid4, unique=True, db_index=True)
+    is_active = models.BooleanField(default=True)  # Add this line
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        indexes = [
+            models.Index(fields=['name', 'code']),
+        ]
+
+    def __str__(self):
+        return f"{self.name} ({self.code})"
     code = models.UUIDField(default=uuid.uuid4, unique=True, db_index=True)  
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
