@@ -8,7 +8,7 @@ class Customer(models.Model):
     class Meta:
         index_together = [['name', 'code']]
 
- def __str__(self):
+    def __str__(self):
         return self.name
 
 class Order(models.Model):
