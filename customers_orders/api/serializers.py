@@ -6,7 +6,7 @@ class CustomerSerializer(serializers.ModelSerializer):
         model = Customer
         fields = ['id', 'name', 'code' , 'created_at', 'updated_at']
 
-class OrderSerializer(serializers.modelsserializers):
+class OrderSerializer(serializers.ModelSerializer):
     Customer = CustomerSerializer(read_only=True) # Nested serializer to show customer details(Like preview in Django Admin(Suggested))
     class Meta:
         model = Order
