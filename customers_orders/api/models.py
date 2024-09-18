@@ -2,7 +2,7 @@ from django.db import models
 import uuid
 
 class Customer(models.Model):
-    name = models.TextField 
+    name = models.CharField(max_length=255)
     code = models.UUIDField(default=uuid.uuid4, unique=True, db_index=True)  
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
