@@ -1,3 +1,4 @@
 from django.shortcuts import render
-
-# Create your views here.
+from  .models import Customer, Order
+from .serializers import CustomerSerializer, OrderSerializer
+from rest_framework import viewsets
