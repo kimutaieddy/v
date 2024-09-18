@@ -10,7 +10,7 @@ router=DefaultRouter()
 router.register('customers', views.CustomerViewSet)
 router.register('orders', views.OrderViewSet)
 
-
+# Include the router urls in urlpatterns (automatically generates urls for viewsets) 
 urlpatterns = [
     path('',include('router.urls')),
 ]
