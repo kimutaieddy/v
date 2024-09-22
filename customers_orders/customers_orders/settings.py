@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'health_check.db',  
     'health_check.cache',  
     'health_check.storage',  
+    "django.contrib.sites",
+    "mozilla_django_oidc",
 ]
 
 MIDDLEWARE = [
@@ -140,3 +142,22 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',  # Ensures that only authenticated users can access the API
     ],
 }
+#site id for django-oidc eeded for django.contrib.sites 
+SITE_ID = 1
+
+#OIDC settings
+OIDC_RP_CLIENT_ID = 'your-client-id'
+OIDC_RP_CLIENT_SECRET = 'your-client-secret'
+OIDC_OP_AUTHORIZATION_ENDPOINT = 'https://accounts.google.com/o/oauth2/auth'
+OIDC_OP_TOKEN_ENDPOINT = 'https://oauth2.googleapis.com/token'
+OIDC_OP_USER_ENDPOINT = 'https://openidconnect.googleapis.com/v1/userinfo'
+
+OIDC_RP_SIGN_ALGO = 'RS256'
+LOGIN_REDIRECT_URL = '/'
+
+AUTHENTICATION_BACKENDS = (
+    'mozilla_django_oidc.auth.OIDCAuthenticationBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+
