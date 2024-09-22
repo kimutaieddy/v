@@ -1,6 +1,6 @@
 from django.urls import path, include  
 from rest_framework.routers import SimpleRouter  
-from .views import CustomerViewSet, OrderViewSet  
+from .views import CustomerViewSet, OrderViewSet 
 
 
 # Initialize SimpleRouter instance
