@@ -144,8 +144,8 @@ REST_FRAMEWORK = {
 }
 #site id for django-oidc eeded for django.contrib.sites 
 SITE_ID = 1
-# customers_orders/settings.py
 
+#OIDC settings
 OIDC_RP_CLIENT_ID = 'your-client-id'
 OIDC_RP_CLIENT_SECRET = 'your-client-secret'
 OIDC_OP_AUTHORIZATION_ENDPOINT = 'https://accounts.google.com/o/oauth2/auth'
@@ -154,3 +154,5 @@ OIDC_OP_USER_ENDPOINT = 'https://openidconnect.googleapis.com/v1/userinfo'
 
 OIDC_RP_SIGN_ALGO = 'RS256'
 LOGIN_REDIRECT_URL = '/'
+
+
