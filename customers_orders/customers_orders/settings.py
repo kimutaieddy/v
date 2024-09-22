@@ -142,3 +142,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',  # Ensures that only authenticated users can access the API
     ],
 }
+#site id for django-oidc eeded for django.contrib.sites 
+SITE_ID = 1
