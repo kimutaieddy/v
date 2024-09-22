@@ -155,4 +155,9 @@ OIDC_OP_USER_ENDPOINT = 'https://openidconnect.googleapis.com/v1/userinfo'
 OIDC_RP_SIGN_ALGO = 'RS256'
 LOGIN_REDIRECT_URL = '/'
 
+AUTHENTICATION_BACKENDS = (
+    'mozilla_django_oidc.auth.OIDCAuthenticationBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 
