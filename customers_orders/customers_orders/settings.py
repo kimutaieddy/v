@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'health_check.cache',  
     'health_check.storage',  
     "django.contrib.sites",
-    "mozil"
+    "mozilla_django_oidc",
 ]
 
 MIDDLEWARE = [
