@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     "django.contrib.sites",
-    "mozilla_django_oidc",
+    'mozilla_django_oidc',
 ]
 
 MIDDLEWARE = [
