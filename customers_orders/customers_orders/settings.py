@@ -42,10 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
-    'health_check',  
-    'health_check.db',  
-    'health_check.cache',  
-    'health_check.storage',  
     "django.contrib.sites",
     "mozilla_django_oidc",
 ]
