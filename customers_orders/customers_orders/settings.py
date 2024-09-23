@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'api',
     "django.contrib.sites",
     'mozilla_django_oidc',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
