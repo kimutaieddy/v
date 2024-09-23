@@ -1,6 +1,6 @@
 from django.urls import path, include  
 from rest_framework.routers import SimpleRouter  
-from .views import CustomerViewSet, OrderViewSet  
+from .views import CustomerViewSet, OrderViewSet 
 
 
 # Initialize SimpleRouter instance
@@ -10,6 +10,6 @@ router.register(r'orders', OrderViewSet)
 
 urlpatterns = [
     path('api/v1', include(router.urls)),  
-    path('health/', include('health_check.urls')),  # Add health check endpoint
+   # path('health/', include('health_check.urls')),  # Add health check endpoint
     path('oidc/', include('mozilla_django_oidc.urls')),  # Add authentication endpoint
 ]

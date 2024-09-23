@@ -146,8 +146,8 @@ REST_FRAMEWORK = {
 SITE_ID = 1
 
 #OIDC settings
-OIDC_RP_CLIENT_ID = 'your-client-id'
-OIDC_RP_CLIENT_SECRET = 'your-client-secret'
+OIDC_RP_CLIENT_ID = '1234567890-abcdefghij.apps.googleusercontent.com'
+OIDC_RP_CLIENT_SECRET = 'ABCDEF1234567890GHIJKLMNOPQRSTUVWXYZ'
 OIDC_OP_AUTHORIZATION_ENDPOINT = 'https://accounts.google.com/o/oauth2/auth'
 OIDC_OP_TOKEN_ENDPOINT = 'https://oauth2.googleapis.com/token'
 OIDC_OP_USER_ENDPOINT = 'https://openidconnect.googleapis.com/v1/userinfo'
@@ -161,3 +161,6 @@ AUTHENTICATION_BACKENDS = (
 )
 
 
+
+AFRICASTALKING_USERNAME = 'your-username' 
+AFRICASTALKING_API_KEY = 'atsk_2b6de0807d0ff2fd13f6e7c454b962e056120738023827b4625156a209b6b5e725b40650'
