@@ -146,8 +146,8 @@ REST_FRAMEWORK = {
 SITE_ID = 1
 
 #OIDC settings
-OIDC_RP_CLIENT_ID = 'your-client-id'
-OIDC_RP_CLIENT_SECRET = 'your-client-secret'
+OIDC_RP_CLIENT_ID = '1234567890-abcdefghij.apps.googleusercontent.com'
+OIDC_RP_CLIENT_SECRET = 'ABCDEF1234567890GHIJKLMNOPQRSTUVWXYZ'
 OIDC_OP_AUTHORIZATION_ENDPOINT = 'https://accounts.google.com/o/oauth2/auth'
 OIDC_OP_TOKEN_ENDPOINT = 'https://oauth2.googleapis.com/token'
 OIDC_OP_USER_ENDPOINT = 'https://openidconnect.googleapis.com/v1/userinfo'
