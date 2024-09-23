@@ -1,5 +1,5 @@
 from django.db import models
-import uuid
+
 
 class Customer(models.Model):
     name = models.CharField(max_length=255)
