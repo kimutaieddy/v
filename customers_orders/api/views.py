@@ -5,7 +5,7 @@ from rest_framework import viewsets
 from rest_framework import authentication, permissions
 from .sms_service import send_sms
 from rest_framework.response import Response
-
+from rest_framework.decorators import api_view
 
 # ViewSet for Customer
 class CustomerViewSet(viewsets.ModelViewSet):
