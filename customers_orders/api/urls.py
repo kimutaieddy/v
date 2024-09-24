@@ -8,8 +8,7 @@ router = SimpleRouter()
 router.register(r'customers', CustomerViewSet)  
 router.register(r'orders', OrderViewSet)  
 
-
 urlpatterns = [
-    path('api/v1/', include(router.urls)), 
-    path('oidc/', include('mozilla_django_oidc.urls')), 
+    path('api/v1', include(router.urls)),  
+    path('oidc/', include('mozilla_django_oidc.urls')),  # Add authentication endpoint
 ]
