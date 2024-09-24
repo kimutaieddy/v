@@ -162,14 +162,16 @@ AUTHENTICATION_BACKENDS = (
 AFRICASTALKING_USERNAME = 'your-username' 
 AFRICASTALKING_API_KEY = 'atsk_2b6de0807d0ff2fd13f6e7c454b962e056120738023827b4625156a209b6b5e725b40650'
 
+
+#
 import sys
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
 if TESTING:
     AUTHENTICATION_BACKENDS = (
-        'django.contrib.auth.backends.ModelBackend',  # Default backend for testing
+        'django.contrib.auth.backends.ModelBackend',  
     )
 else:
     AUTHENTICATION_BACKENDS = (
-        'mozilla_django_oidc.auth.OIDCAuthenticationBackend',  # OIDC backend
+        'mozilla_django_oidc.auth.OIDCAuthenticationBackend', 
     )
