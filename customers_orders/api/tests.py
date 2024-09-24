@@ -2,7 +2,7 @@ from django.test import TestCase
 from rest_framework.test import APIClient
 from rest_framework.authtoken.models import Token  # Import token model
 from django.contrib.auth.models import User
-from .models import Customer, Order
+from .models import Customer
 
 class APITestCase(TestCase):
     
@@ -20,7 +20,7 @@ class APITestCase(TestCase):
         # Create a test customer
         self.customer = Customer.objects.create(name="John Doe", code="JD123")
     
-   def test_create_customer(self):
+def test_create_customer(self):
     response = self.client.post('/api/v1/customers/', {"name": "Jane Smith", "code": "JS456"}, format='json')
     self.assertEqual(response.status_code, 201)
 
