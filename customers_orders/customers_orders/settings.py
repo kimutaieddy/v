@@ -200,10 +200,13 @@ AFRICASTALKING_USERNAME = 'your-username'
 AFRICASTALKING_API_KEY = 'atsk_2b6de0807d0ff2fd13f6e7c454b962e056120738023827b4625156a209b6b5e725b40650'
 
 
-#
+#Test mode flag to determine if the application is running in test mode (Just for the tests)
 import sys
+
+# Determine if the application is running in test mode
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
+# Adjust authentication backends based on the environment
 if TESTING:
     AUTHENTICATION_BACKENDS = (
         'django.contrib.auth.backends.ModelBackend',  
