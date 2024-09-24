@@ -7,17 +7,17 @@ from .models import Customer
 class APITestCase(TestCase):
     
     def setUp(self):
-        # Create a test user
+      
         self.user = User.objects.create_user(username="testuser", password="testpass")
         
-        # Generate token for the user
+        
         self.token = Token.objects.create(user=self.user)
         
-        # Set up a test client and authenticate it with the token
+        
         self.client = APIClient()
         self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token.key)
 
-        # Create a test customer
+        
         self.customer = Customer.objects.create(name="John Doe", code="JD123")
     
 def test_create_customer(self):
