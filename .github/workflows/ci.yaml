@@ -8,7 +8,7 @@ on:
       - dev-1
   pull_request:
     branches:
-      - main
+      - dev-1
 
 jobs:
   test:
