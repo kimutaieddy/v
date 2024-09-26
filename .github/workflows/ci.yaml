@@ -2,7 +2,7 @@
 
 name: Django CI
 
-on:
+on:7
   push:
     branches:
       - dev-1
