@@ -54,6 +54,8 @@ jobs:
 
     - name: Set up database
       run: python manage.py migrate
+      working-directory: .  # Ensure the command is executed in the root directory
 
     - name: Run tests
       run: python manage.py test
+      working-directory: .  # Ensure the command is executed in the root directory
