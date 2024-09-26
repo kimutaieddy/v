@@ -14,7 +14,7 @@ drf-yasg==1.21.7
 idna==3.10
 inflection==0.5.1
 josepy==1.14.0
-mozilla-django-oidc==4.0.1z
+mozilla-django-oidc==4.0.1  
 packaging==24.1
 psycopg2==2.9.9
 psycopg2-binary==2.9.9
