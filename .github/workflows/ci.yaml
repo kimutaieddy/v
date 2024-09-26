@@ -3,7 +3,7 @@ name: Django CI
 on:
   push:
     branches:
-      -main
+      - main  
   pull_request:
     branches:
       - main
@@ -63,4 +63,4 @@ jobs:
 
     - name: Run tests
       run: python manage.py test
-      working-directory: ./customers_orders 
+      working-directory: ./customers_orders  
