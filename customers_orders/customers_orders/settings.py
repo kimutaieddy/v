@@ -121,9 +121,9 @@ WSGI_APPLICATION = 'customers_orders.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'kurt',
-        'USER': 'tits',
-        'PASSWORD': '123',  
+        'NAME': 'starry_night',
+        'USER': 'galactic_hiker',
+        'PASSWORD': 'Nebula$2024!',  
         'HOST': 'localhost',
         'PORT': '5432',
     }
