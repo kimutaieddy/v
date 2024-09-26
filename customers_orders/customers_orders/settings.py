@@ -97,6 +97,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'customers_orders.urls'
 
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
