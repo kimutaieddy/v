@@ -19,7 +19,7 @@ jobs:
         image: postgres:12
         env:
           POSTGRES_USER: starry_night
-          POSTGRES_PASSWORD: galactic_hiker Nebula$2024!
+          POSTGRES_PASSWORD: Nebula$2024!
           POSTGRES_DB: galactic_hiker
         options: >-
           --health-cmd="pg_isready"
