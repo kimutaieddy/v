@@ -54,8 +54,8 @@ jobs:
 
     - name: Set up database
       run: python manage.py migrate
-      working-directory: ./Backend-Technical-Challenge  # Adjusted to point correctly
+      working-directory: ./customers_orders  # Adjusted to point correctly
 
     - name: Run tests
       run: python manage.py test
-      working-directory: ./Backend-Technical-Challenge  # Adjusted to point correctly
+      working-directory: ./customers_orders  # Adjusted to point correctly
