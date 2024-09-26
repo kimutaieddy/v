@@ -1,0 +1,1 @@
+web: gunicorn Backend-Technical-Challenge.wsgi --log-file -
