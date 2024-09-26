@@ -121,7 +121,9 @@ WSGI_APPLICATION = 'customers_orders.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': ,
+        'NAME': 'kurt',
+        'USER': 'tits',
+        
     }
 }
 
