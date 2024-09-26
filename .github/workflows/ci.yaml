@@ -5,7 +5,7 @@ name: Django CI
 on:
   push:
     branches:
-      - Dev-1  # Runs on the Dev-1 branch
+      - Dev-1  
   pull_request:
     branches:
       - Dev-1
