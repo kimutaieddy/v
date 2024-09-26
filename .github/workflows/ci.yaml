@@ -19,7 +19,7 @@ jobs:
         image: postgres:12
         env:
           POSTGRES_USER: starry_night
-          POSTGRES_PASSWORD: mypassword
+          POSTGRES_PASSWORD: galactic_hiker
           POSTGRES_DB: mydatabase
         options: >-
           --health-cmd="pg_isready"
