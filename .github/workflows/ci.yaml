@@ -52,9 +52,6 @@ jobs:
           sleep 1
         done
 
-    - name: Change directory to Backend-Technical-Challenge
-      run: cd Backend-Technical-Challenge
-
     - name: Set up database
       run: python manage.py migrate
       working-directory: ./Backend-Technical-Challenge  # Change to the correct directory
