@@ -1,8 +1,7 @@
 # .github/workflows/ci.yml
 
 name: Django CI
-
-on:7
+on:
   push:
     branches:
       - dev-1
