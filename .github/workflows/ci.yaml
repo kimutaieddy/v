@@ -46,6 +46,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r customers_orders/requirements.txt  
+        
+        # This step waits for PostgreSQL to be ready before proceeding.
+        # It attempts to connect to PostgreSQL on localhost at port 5432 using the user 'galactic_hiker'.
+        # The script retries the connection every second for up to 30 seconds.
+        # If the connection is successful within this period, the loop breaks and the workflow continues.
+        # If the connection is not successful within 30 seconds, the script will exit the loop and the workflow may fail.
 
     - name: Wait for PostgreSQL
       run: |
