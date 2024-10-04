@@ -2,7 +2,7 @@
 # It copies the application code into the container, sets the working directory,
 # installs the required dependencies from requirements.txt, and specifies the
 # command to run the application using app.py.
-FROM PYTHON 3.8
+FROM python:3.8
 
 COPY . /app
 
@@ -11,5 +11,3 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 CMD ["python", "app.py"]
-
-WW
