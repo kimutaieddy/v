@@ -98,6 +98,10 @@ MIDDLEWARE = [
 
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  
+]
+
 ROOT_URLCONF = 'customers_orders.urls'
 
 
