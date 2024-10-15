@@ -82,6 +82,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     'mozilla_django_oidc',
     'rest_framework.authtoken',
+    'corsheaders',  
 ]
 
 MIDDLEWARE = [
@@ -93,6 +94,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'customers_orders.urls'
